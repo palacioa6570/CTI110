@@ -16,10 +16,10 @@ grosspay = 0
 if employee_hours <=40:
   did_overtime = False
   regpay = employee_hours * employee_payrate
-  overtime = "N/A"
-  overtimepay = "N/A"
-  overtimerate = "N/A"
-  grosspay = pay
+  overtime = 0
+  overtimepay = 0
+  overtimerate = 0
+  grosspay = regpay
 else:
   did_overtime = True
   overtime = employee_hours - 40
